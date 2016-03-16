@@ -29,7 +29,7 @@ var multiYesNo = prompt('Do you think I would be a good muti-tasker? yes/no');
 multiYesNo = multiYesNo.toLowerCase();
 console.log('the user thinks my I am a good multi-tasker: ' + multiYesNo);
 if(multiYesNo === 'yes') {
-  alert('I will take that a a complement');
+  alert('I will take that a a compliment');
 }else if(multiYesNo === 'no'){
   alert('I disagree!');
 }else{
@@ -52,8 +52,8 @@ hireYesNo = hireYesNo.toLowerCase();
 console.log('Would the user hire me?: ' + hireYesNo);
 if(hireYesNo === 'yes') {
   alert('I can start today!');
-  var answerSix = prompt('Seriously?? You would hire me?');
-  console.log('they would hire me because + ' + answerSix);
+  var answerSix = prompt('Seriously?? You would hire me? yes/no');
+  console.log('confirmation of job hire: ' + answerSix);
 }else if(hireYesNo === 'no'){
   alert('I probably need more experience...');
 }else{
