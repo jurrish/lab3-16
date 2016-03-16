@@ -1,5 +1,5 @@
 var visitName = prompt('Welcome! What is your name?');
-console.log('the user name is ' + 'visitName');
+console.log('the user name is ' + visitName);
 
 alert('Hello ' + visitName);
 
