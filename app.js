@@ -52,11 +52,10 @@ hireYesNo = hireYesNo.toLowerCase();
 console.log('Would the user hire me?: ' + hireYesNo);
 if(hireYesNo === 'yes') {
   alert('I can start today!');
-  prompt('Using one word, please answer why you would');
-  var answerSix = prompt();
+  var answerSix = prompt('Seriously?? You would hire me?');
   console.log('they would hire me because + ' + answerSix);
 }else if(hireYesNo === 'no'){
   alert('I probably need more experience...');
 }else{
-  alert('not a valid answer');
+  alert('not a valid answer!!!');
 }
