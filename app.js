@@ -90,3 +90,9 @@ while(amountOfGuesses < 4 && userGuess !== 31){
 }
 
 alert(visitName + ', you answered : ' + numberOfCorrectGuesses + ' out of 7 correct!');
+
+var userChoicesArray = [];
+for(i = 0; i < 5; i++){
+  userInput = prompt('Name a game');
+  userChoicesArray.push(userInput);
+}
