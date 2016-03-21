@@ -169,6 +169,27 @@ if (userInput.toLowerCase() === 'yes') {
 //   }
 // }
 //
+
+var pTagSeven = document.getElementById('ans-seven');
+var pQuesSeven = document.getElementById('ques-seven');
+var amountOfGuesses = 0;
+while(amountOfGuesses < 4 && userGuess !== 31){
+  var userInput = prompt('how old do you think I am?');
+  arrayPrompts.push(pQuesSeven);
+  if (userInput.parseInt() === 31) {
+    pTagSeven.textContent = 'good guess!';
+    arrayCorrectAnswers.push(userInput);
+  }else if(userInput.isNaN() === true){
+    pTagSeven.textContent = 'please enter a numerical value';
+  }else if(userInput.parseInt() < 31){
+    pTagSeven.textContent = 'too low!';
+  }else if(userInput.parseInt() > 31){
+    pTagSeven.textContent = 'too high!';
+  }else{
+    alert('not a valid response');
+  }
+}
+
 // alert(visitName + ', you answered : ' + numberOfCorrectGuesses + ' out of 7 correct!');
 //
 // var userChoicesArray = [];
