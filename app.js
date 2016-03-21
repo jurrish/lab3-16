@@ -54,12 +54,11 @@ arrayPrompts.push(pQuesTwo);
 if (userInput.toLowerCase() === 'yes') {
   pTagTwo.textContent = 'That is a good guess';
   arrayCorrectAnswers.push(userInput);
-}else if(userInput.toLowerCase === 'no'){
+}else if(userInput.toLowerCase() === 'no'){
   pTagTwo.textContent = 'I am actually 31';
 }else{
   alert('not a valid response');
 }
-
 
 // var multiYesNo = prompt('Do you think I would be a good muti-tasker? yes/no');
 // multiYesNo = multiYesNo.toLowerCase();
@@ -73,6 +72,20 @@ if (userInput.toLowerCase() === 'yes') {
 //   alert('not a valid response');
 // }
 //
+var pTagThree = document.getElementById('ans-three');
+var pQuesThree = document.getElementById('ques-three');
+
+var userInput = prompt('Do you think I would be a good muti-tasker? yes/no');
+arrayPrompts.push(pQuesThree);
+if (userInput.toLowerCase() === 'yes') {
+  pTagThree.textContent = 'I will take that a a compliment';
+  arrayCorrectAnswers.push(userInput);
+}else if(userInput.toLowerCase() === 'no'){
+  pTagThree.textContent = 'I disagree!';
+}else{
+  alert('not a valid response');
+}
+
 // var goalsYesNo = prompt('Do you think my goals are realistic? yes/no');
 // goalsYesNo = goalsYesNo.toLowerCase();
 // console.log('the user thinks my goals are realistic: ' + goalsYesNo);
@@ -84,6 +97,21 @@ if (userInput.toLowerCase() === 'yes') {
 // }else{
 //   alert('that is not a valid response');
 // }
+
+var pTagFour = document.getElementById('ans-four');
+var pQuesFour = document.getElementById('ques-four');
+
+var userInput = prompt('Do you think my goals are realistic? yes/no');
+arrayPrompts.push(pQuesFour);
+if (userInput.toLowerCase() === 'yes') {
+  pTagFour.textContent = 'Thanks! I agree';
+  arrayCorrectAnswers.push(userInput);
+}else if(userInput.toLowerCase() === 'no'){
+  pTagFour.textContent = 'I have to disagree with you';
+}else{
+  alert('not a valid response');
+}
+
 //
 // var hireYesNo = prompt('Would you hire me? yes/no');
 // hireYesNo = hireYesNo.toLowerCase();
@@ -98,6 +126,25 @@ if (userInput.toLowerCase() === 'yes') {
 // }else{
 //   alert('not a valid answer!!!');
 // }
+
+var pTagFive = document.getElementById('ans-five');
+var pQuesFive = document.getElementById('ques-five');
+var pTagSix = document.getElementById('ans-six');
+var pQuesSix = document.getElementById('ques-six');
+
+var userInput = prompt('Would you hire me? yes/no');
+arrayPrompts.push(pQuesFive);
+arrayPrompts.push(pQuesSix);
+if (userInput.toLowerCase() === 'yes') {
+  pTagFive.textContent = 'I can start today!';
+  arrayCorrectAnswers.push(userInput);
+  arrayCorrectAnswers.push(userInput);
+}else if(userInput.toLowerCase() === 'no'){
+  pTagFive.textContent = 'I probably need more experience...';
+}else{
+  alert('not a valid response');
+}
+
 //
 // var amountOfGuesses = 0;
 // while(amountOfGuesses < 4 && userGuess !== 31){
