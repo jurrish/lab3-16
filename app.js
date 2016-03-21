@@ -20,11 +20,17 @@ var arrayCorrectAnswers = [];
 var arrayPrompts = [];
 
 var pTagOne = document.getElementById('ans-one');
+var pQuesOne = document.getElementById('ques-one');
 
 var userInput = prompt('Do you want to play a game? Please type yes/no');
+arrayPrompts.push(pQuesOne);
 if (userInput.toLowerCase() === 'yes') {
   pTagOne.textContent = 'Cool. Here we go!';
-  arrayCorrectAnswers.push(pTagOne);
+  arrayCorrectAnswers.push(userInput);
+}else if (userInput.toLowerCase() === 'no'){
+  pTagOne.textContent = 'Too bad. Here we go!';
+}else{
+  alert('not a valid response');
 }
 
 // var ageYesNo = prompt('Do you think I am over 30? yes/no');
@@ -38,7 +44,23 @@ if (userInput.toLowerCase() === 'yes') {
 // }else{
 //   alert('not a valid response');
 // }
-//
+
+
+var pTagTwo = document.getElementById('ans-two');
+var pQuesTwo = document.getElementById('ques-two');
+
+var userInput = prompt('Do you think I am over 30? yes/no');
+arrayPrompts.push(pQuesTwo);
+if (userInput.toLowerCase() === 'yes') {
+  pTagTwo.textContent = 'That is a good guess';
+  arrayCorrectAnswers.push(userInput);
+}else if(userInput.toLowerCase === 'no'){
+  pTagTwo.textContent = 'I am actually 31';
+}else{
+  alert('not a valid response');
+}
+
+
 // var multiYesNo = prompt('Do you think I would be a good muti-tasker? yes/no');
 // multiYesNo = multiYesNo.toLowerCase();
 // console.log('the user thinks my I am a good multi-tasker: ' + multiYesNo);
